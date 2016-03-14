@@ -276,7 +276,7 @@ static const NSCalendarUnit kCalendarUnitYMD = NSCalendarUnitYear | NSCalendarUn
 
     self.collectionView.delegate = self;
     self.collectionView.dataSource = self;
-    [self.collectionView setBackgroundColor:self.backgroundColor];
+    [self.collectionView setBackgroundColor:(__bridge CGColorRef _Nullable)(self.backgroundColor)];
 
     //Configure the Overlay View
     [self.overlayView setBackgroundColor:[self.backgroundColor colorWithAlphaComponent:0.90]];
